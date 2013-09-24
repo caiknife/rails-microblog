@@ -1,4 +1,8 @@
 Blog::Application.routes.draw do
+  resources :microposts
+
+  resources :users
+
   root to: 'welcome#index'
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
